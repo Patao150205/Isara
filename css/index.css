@@ -1,0 +1,403 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+.top-question h1::before, .top-question h1::after, .about h1::before, .about h1::after {
+  content: "";
+  width: 45px;
+  height: 45px;
+  position: absolute;
+}
+
+.top-question h1::before, .about h1::before {
+  top: 0;
+  left: 0;
+  border-top: 4px solid #EBB94D;
+  border-left: 4px solid #EBB94D;
+}
+
+.top-question h1::after, .about h1::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 4px solid #EBB94D;
+  border-right: 4px solid #EBB94D;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  color: #333333;
+}
+
+header {
+  background-color: #fff;
+  height: 75px;
+  position: fixed;
+  width: 100%;
+}
+
+header .container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+header .container .header-left {
+  display: inline-block;
+  width: 400px;
+}
+
+header .container .header-left img {
+  width: 125px;
+  height: 45px;
+}
+
+header .container .header-left p {
+  display: inline-block;
+  vertical-align: 7px;
+  display: inline-block;
+}
+
+header .container .header-right {
+  float: right;
+}
+
+header .container .header-right a {
+  text-align: center;
+  display: inline-block;
+  line-height: 3.14286rem;
+  background: #DB6B64;
+  border-radius: 30px;
+  width: 318px;
+  font-weight: 300;
+}
+
+header .container .header-right a:hover {
+  background: #D84940;
+}
+
+.top-title {
+  background-image: url("../img/main.jpg");
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  padding-top: 160px;
+  padding-bottom: 95px;
+}
+
+.top-title .container p {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3.21429rem;
+  margin-bottom: 10px;
+}
+
+.top-title .container p:last-child {
+  font-size: 1.42857rem;
+  line-height: 1.57143rem;
+}
+
+.top-title .container img {
+  margin-right: 20px;
+  margin-bottom: 40px;
+  width: 295px;
+  height: 85px;
+}
+
+.application-area {
+  text-align: center;
+  height: 42.85714rem;
+  background: #EBB94D;
+}
+
+.application-area .container {
+  margin: 0 auto;
+  width: 1030px;
+}
+
+.application-area .container p {
+  color: white;
+  font-size: 1.42857rem;
+  line-height: 2.28571rem;
+}
+
+.application-area .container p:first-child {
+  padding-top: 32px;
+}
+
+.application-area .container p:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.application-area .container .annotation {
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  line-height: 2.07143rem;
+  background: white;
+  color: #C7264E;
+  font-size: 1.28571rem;
+  width: 33.21429rem;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.application-area .container .app-btn {
+  display: inline-block;
+  line-height: 7.14286rem;
+  font-size: 2rem;
+  width: 100%;
+  border-radius: 60px;
+  background: #DB6B64;
+  margin-top: 50px;
+  margin-bottom: 4.28571rem;
+}
+
+.application-area .container .app-btn:hover {
+  background: #D84940;
+}
+
+.application-area .container .app-info {
+  font-size: 1.5rem;
+  line-height: 2.42857rem;
+}
+
+.application-area .container .app-info:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.top-question {
+  box-sizing: border-box;
+  padding: 40px 0;
+  text-align: center;
+  background-image: url("../img/introbottom.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 587px;
+}
+
+.top-question h1 {
+  font-size: 2rem;
+  line-height: 95px;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.top-question p {
+  font-weight: 300;
+  font-size: 1.42857rem;
+  line-height: 32px;
+}
+
+.top-question p span {
+  font-weight: bold;
+  background: linear-gradient(rgba(255, 255, 255, 0) 70%, #EBB94D 70%);
+}
+
+.top-question .container {
+  margin: 0 auto;
+  max-width: 860px;
+}
+
+.top-question .container .text-wrapper p:nth-of-type(2) {
+  padding-bottom: 27px;
+}
+
+.top-question .container .text-wrapper p:nth-of-type(5) {
+  padding-bottom: 27px;
+}
+
+.about {
+  text-align: center;
+  background: #FDF5E0;
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+.about h1 + p {
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 33px;
+  font-size: 1.42857rem;
+}
+
+.about h1 {
+  margin: 0 auto;
+  max-width: 853px;
+  height: 134px;
+  font-size: 2rem;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 3.21429rem;
+  font-weight: 600px;
+}
+
+.about .about-icon {
+  position: absolute;
+  top: -41px;
+  left: calc(50% - 41px);
+  width: 82px;
+  height: 82px;
+  border-radius: calc(50%);
+  background: #EBB94D;
+}
+
+.about .about-icon p {
+  text-align: center;
+  padding-top: 35px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.about .skil-container {
+  max-width: 1168px;
+  height: 250px;
+  border: 3px solid #EBB94D;
+  border-radius: 4px;
+  margin: 0 auto;
+  background: white;
+}
+
+.about .skil-container h2 {
+  padding-top: 32px;
+  padding-bottom: 30px;
+  font-size: 1.42857rem;
+}
+
+.about .skil-container .skil-lists {
+  margin: 0 auto;
+  display: flex;
+  width: 750px;
+}
+
+.about .skil-container .skil-lists .skil {
+  display: inherit;
+  padding: 0 12px;
+}
+
+.about .skil-container .skil-lists .skil p {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+.about .skil-container .skil-lists .skil .skil-contents {
+  align-items: flex-end;
+}
+
+@media (max-width: 1190px) {
+  html {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,13 @@
+// サイト基本設定
+
+// フォント
+$font-base: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+// ブレイクポイント
+$breakpoints: (
+  tb: "(max-width: 1190px)",
+  mo: '(max-width: 768px)',
+);
+//色の設定
+$main-co: #EBB94D;
+
+

@@ -1,0 +1,257 @@
+@import '../sass/setting';
+@import './reset.scss';
+@import './func.scss';
+@import '../sass/module';
+
+$baseFontSize: 14;
+
+html {
+  font-size: $baseFontSize + px;
+}
+
+body {
+  font-family: $font-base;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  color: #333333;
+}
+
+header {
+  background-color: #fff;
+  height: 75px;
+  position: fixed;
+  width: 100%;
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 16px 0;
+    .header-left {
+      display: inline-block;
+      width: 400px;
+      img {
+        width: 125px;
+        height: 45px;
+      }
+      p {
+        display: inline-block;
+        vertical-align: 7px;
+        display: inline-block;
+      }
+    }
+    .header-right {
+      float: right;
+      a {
+        text-align: center;
+        display: inline-block;
+        line-height: rem(44);
+        background: #DB6B64;
+        border-radius: 30px;
+        width: 318px;
+        font-weight: 300;
+        &:hover {
+          background: #D84940;
+        }
+      }
+    }
+  }
+}
+
+.top-title {
+  background-image: url('../img/main.jpg');
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  padding: {top: 160px; bottom: 95px;};
+  .container {
+    p {
+      font-size: rem(28);
+      font-weight: bold;
+      line-height: rem(45);
+      margin-bottom: 10px;
+      &:last-child {
+        font-size: rem(20);
+        line-height: rem(22);
+      }
+    }
+    img {
+      margin: {right: 20px; bottom: 40px;}
+      width: 295px;
+      height: 85px;
+    }
+  }
+}
+
+.application-area {
+  text-align: center;
+  height: rem(600);
+  background: $main-co;
+  .container {
+    margin: 0 auto;
+    width: 1030px;
+    p {
+      color: white;
+      font-size: rem(20);
+      line-height: rem(32);
+      &:first-child {
+        padding-top: 32px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 20px;
+      }
+    }
+    .annotation {
+      font-family:  Menlo,Monaco,Consolas,"Courier New",monospace;
+      line-height: rem(29);
+      background: white;
+      color: #C7264E;
+      font-size: rem(18);
+      width: rem(465);
+      margin: 0 auto;
+      border-radius: 8px;
+    }
+    .app-btn {
+      display: inline-block;
+      line-height: rem(100);
+      font-size: rem(28);
+      width: 100%;
+      border-radius: 60px;
+      background: #DB6B64;
+      margin: {top: 50px; bottom: rem(60);};
+      &:hover {
+        background: #D84940;
+      }
+    }
+    .app-info {
+      font-size: rem(21);
+      line-height: rem(34);
+      &:not(:last-child) {
+        margin-bottom: 35px;
+      }
+    }
+  }
+  }
+
+  .top-question {
+    box-sizing: border-box;
+    
+    padding: 40px 0;
+    text-align: center;
+    background-image: url('../img/introbottom.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 587px;
+
+    h1 {
+      font-size: rem(28);
+      line-height: 95px;
+      position: relative;
+      margin-bottom: 45px;
+      &::before, &::after {@extend %before-after;}
+      &::before {@extend %before;}
+      &::after {@extend %after;}
+    }
+    p {
+      font-weight: 300;
+      font-size: rem(20);
+      line-height: 32px;
+      span {
+        font-weight: bold;
+        background: linear-gradient(rgba(255,255,255, 0) 70%, $main-co 70%);
+      }
+    }
+    .container {
+      margin: 0 auto;
+      max-width: 860px;
+      .text-wrapper {
+        p {
+          &:nth-of-type(2) {
+            padding-bottom: 27px;
+          }
+          &:nth-of-type(5) {
+            padding-bottom: 27px;
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    text-align: center;
+    background: #FDF5E0;
+    position: relative;
+    padding: {top: 70px; bottom: 80px;};
+    h1 + p {
+      margin: 0 auto;
+      padding: {top: 45px; bottom: 33px;}
+      font-size: rem(20);
+    }
+    h1 {
+      margin: 0 auto;
+      max-width: 853px;
+      height: 134px; 
+      font-size: rem(28);
+      position: relative;
+      box-sizing: border-box;
+      padding-top: rem(45);
+      font-weight: 600px;
+      &::before, &::after {@extend %before-after;}
+      &::before {@extend %before;}
+      &::after {@extend %after;}
+    }
+    .about-icon {
+      position: absolute;
+      top: -41px;
+      left: calc(50% - 41px);
+      width: 82px;
+      height: 82px;
+      border-radius: calc(50%);
+      background: $main-co;
+      p {
+        text-align: center;
+        padding-top: 35px;
+        color: #fff;
+        font-weight: 400;
+      }
+    }
+
+    .skil-container {
+      max-width: 1168px;
+      height: 250px;
+      border: 3px solid $main-co;
+      border-radius: 4px;
+      margin: 0 auto;
+      background: white;
+      h2 {
+        padding: {top: 32px; bottom: 30px};
+        font-size: rem(20);
+      }
+      .skil-lists {
+        margin: 0 auto;
+        display: flex;
+        width: 750px;
+        .skil {
+          display: inherit;
+          padding: 0 12px;
+          p {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 19px;
+          }
+          .skil-contents {
+            align-items: flex-end;
+          }
+        }
+      }
+    }
+    }
+    
+    
+    @import './tablet.scss';
