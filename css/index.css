@@ -145,6 +145,7 @@ header {
   background-color: #fff;
   height: 75px;
   position: fixed;
+  z-index: 1000;
   width: 100%;
 }
 
@@ -223,6 +224,7 @@ header .container .header-right a:hover {
 }
 
 .application-area .container {
+  position: relative;
   margin: 0 auto;
   width: 1030px;
 }
@@ -274,6 +276,12 @@ header .container .header-right a:hover {
 
 .application-area .container .app-info:not(:last-child) {
   margin-bottom: 35px;
+}
+
+.application-area .container .SNS {
+  position: absolute;
+  top: 540px;
+  left: 400px;
 }
 
 .top-question {
@@ -394,6 +402,178 @@ header .container .header-right a:hover {
 
 .about .skil-container .skil-lists .skil .skil-contents {
   align-items: flex-end;
+}
+
+.servises {
+  text-align: center;
+}
+
+.servises .background-container {
+  background-image: url("../img/aboutsecondbg.jpg");
+  background-size: cover;
+  height: 450px;
+}
+
+.servises span {
+  color: #EBB94D;
+}
+
+.servises .top-ser p {
+  color: white;
+  font-size: 1.42857rem;
+  line-height: 2.28571rem;
+}
+
+.servises .top-ser p.ser-emphasis {
+  font-size: 2rem;
+  line-height: 2.85714rem;
+  padding-top: 65px;
+  padding-bottom: 30px;
+}
+
+.servises .steps {
+  display: flex;
+  width: 1180px;
+  height: 180px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.servises .steps .step {
+  width: 375px;
+  background: white;
+  border-radius: 5px;
+  margin: 0 9px;
+}
+
+.servises .steps .step p:first-child {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 33px;
+  background-color: #EBB94D;
+  color: white;
+  width: 314px;
+  height: 27px;
+  line-height: 24px;
+  border-radius: 4px;
+}
+
+.servises .step-message {
+  box-sizing: border-box;
+  padding-top: 45px;
+  background: #026EA8;
+  height: 145px;
+}
+
+.servises .step-message p {
+  font-size: 1.42857rem;
+  line-height: 32px;
+  color: white;
+}
+
+.learning {
+  text-align: center;
+}
+
+.learning .container {
+  width: 850px;
+  margin: 0 auto;
+  padding-top: 65px;
+  padding-bottom: 60px;
+}
+
+.learning .container h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.learning .container h1 span {
+  font-size: 1.14286rem;
+}
+
+.learning .container .purpose {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.learning .container .lea-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.learning .container .lea-contents img {
+  width: 180px;
+  height: 180px;
+}
+
+.learning .container p:last-child {
+  font-size: 1.14286rem;
+  padding-top: 45px;
+}
+
+.questions h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.questions .container .question {
+  margin: 0 auto;
+  width: 77.5%;
+  font-weight: 600;
+  position: relative;
+  margin-top: 5px;
+}
+
+.questions .container .question h2 {
+  font-size: 1.42857rem;
+  height: 4.28571rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.questions .container .question h2:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.questions .container .question h2 .fa-question-circle {
+  padding-left: 20px;
+  color: #026EA8;
+  line-height: 4.28571rem;
+}
+
+.questions .container .question h2 .fa-angle-down,
+.questions .container .question h2 .fa-angle-up {
+  float: right;
+  padding-right: 20px;
+  font-size: 2.14286rem;
+  color: #ccc;
+  line-height: 4.28571rem;
+  font-weight: bold;
+}
+
+.questions .container .question .under-bar {
+  font-size: 1.14286rem;
+  line-height: 26px;
+  height: 0;
+  padding: 0;
+  margin: 0 20px;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
+.questions .container .question .open {
+  padding-top: 34px;
+  padding-bottom: 44px;
+  border-bottom: 1px solid #eee;
+  height: 3.57143rem;
+  margin: 0 20px;
 }
 
 @media (max-width: 1190px) {

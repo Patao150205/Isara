@@ -28,6 +28,7 @@ header {
   background-color: #fff;
   height: 75px;
   position: fixed;
+  z-index: 1000;
   width: 100%;
   .container {
     max-width: 1170px;
@@ -94,6 +95,7 @@ header {
   height: rem(600);
   background: $main-co;
   .container {
+    position: relative;
     margin: 0 auto;
     width: 1030px;
     p {
@@ -135,6 +137,11 @@ header {
       &:not(:last-child) {
         margin-bottom: 35px;
       }
+    }
+    .SNS {
+      position: absolute;
+      top: 540px;
+      left: 400px;
     }
   }
   }
@@ -253,5 +260,154 @@ header {
     }
     }
     
-    
+    .servises {
+      text-align: center;
+      .background-container {
+        background-image: url('../img/aboutsecondbg.jpg');
+        background-size: cover;
+        height: 450px;
+      }
+      span {color: $main-co;}
+      .top-ser {
+        p {
+          color: white;
+          font-size: rem(20);
+          line-height: rem(32);
+        }
+        p.ser-emphasis {
+          font-size: rem(28);
+          line-height: rem(40);
+          padding: {top: 65px; bottom: 30px};
+        }
+      }
+      .steps {
+        display: flex;
+        width: 1180px;
+        height: 180px;
+        margin: 0 auto;
+        padding: {top: 30px; bottom: 40px};
+        .step {
+          width: 375px;
+          background: white;
+          border-radius: 5px;
+          margin: 0 9px;
+          p:first-child {
+            margin: 0 auto;
+            margin: {top: 30px; bottom: 33px};
+            background-color: $main-co;
+            color: white;
+            width: 314px;
+            height: 27px;
+            line-height: 24px;
+            border-radius: 4px;
+          }
+        }
+      }
+      .step-message {
+        box-sizing: border-box;
+        padding-top: 45px;
+        background: #026EA8;
+        height: 145px;
+        p {
+          font-size: rem(20);
+          line-height: 32px;
+          color: white;
+        }
+      
+      }
+
+
+    }
+    .learning {
+      text-align: center;
+
+      .container {
+        width: 850px;
+        margin: 0 auto;
+        padding: {top: 65px; bottom: 60px;};
+        h1 {
+          font-size: rem(28);
+          font-weight: 600;
+          color: #333333;
+          span {
+            font-size: rem(16);
+          }
+        }
+        
+        .purpose {
+          font-size: 20px;
+          font-weight: 300;
+          margin: {top: 50px; bottom: 40px;};
+        }
+        .lea-contents {
+          display: flex;
+          justify-content: space-between;
+          img {
+            width: 180px;
+            height: 180px;
+          }
+        }
+        p:last-child {
+          font-size: rem(16);
+          padding-top: 45px;
+        }
+      }
+      }
+
+    .questions {
+      h1 {
+        text-align: center;
+        font-size: rem(28);
+        font-weight: 600;
+      }
+      .container {
+        .question {
+          margin: 0 auto;
+          width: 77.5%;
+          font-weight: 600;
+          position: relative;
+          margin-top: 5px;
+          h2 {
+            font-size: rem(20);
+            height: rem(60);
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            &:hover {
+              text-decoration: underline;
+              text-decoration-thickness: 3px;
+            }
+            .fa-question-circle {
+              padding-left: 20px;
+              color: #026EA8;
+              line-height: rem(60);
+            }
+            .fa-angle-down,
+            .fa-angle-up {
+              float: right;
+              padding-right: 20px;
+              font-size: rem(30);
+              color: #ccc;
+              line-height: rem(60);
+              font-weight: bold;
+            }
+          }
+          .under-bar {
+            font-size: rem(16);
+            line-height: 26px;
+            height: 0;
+            padding: 0;
+            margin: 0 20px;
+            overflow: hidden;
+            transition-duration: 0.3s;
+          }
+          .open {
+            padding: {top: 34px; bottom: 44px;};
+            border-bottom: 1px solid #eee;
+            height: rem(50);
+            margin: 0 20px;
+          }
+        }
+      }
+    }
     @import './tablet.scss';
